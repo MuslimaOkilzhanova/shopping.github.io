@@ -1,0 +1,12 @@
+.order {
+    position: relative;
+}
+
+.order_wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 480;
+    background: #FFFFFF;
+
+}
