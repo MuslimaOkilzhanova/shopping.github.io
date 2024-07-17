@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping cart</title>
+    <!--Bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--css-->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+    body {
+    font-family: 'Poppins';font-size: 22px;
+    }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="checkoutLayout">
+            <div class="returnCart">
+                <h4><a href="#" class="text-body"><i class="arrow-left"><img src="pic/arrow.png" alt=""></i> Shopping Continue</a></h4>
+                <h2>Shopping cart</h2>
+                <h5>You have 3 items in your cart</h5>
+                <div class="list">
+                    <div class="item">
+                        <img src="pic/Rectangle 19.png" alt="">
+                        <div class="info">
+                            <div class="name">Italy Pizza</div>
+                            <div class="price">Extra cheese and toping</div>
+                        </div>
+                        <div class="quantity">1</div>
+                        <div class="returnPrice">$681</div>
+                        <i class="trashcan" ><img src="pic/Trash Can.png" alt=""></i>
+                    </div>
+                    <div class="item">
+                        <img src="pic/Rectangle 21.png" alt="">
+                        <div class="info">
+                            <div class="name">Combo Plate</div>
+                            <div class="price">Extra cheese and toping</div>
+                        </div>
+                        <div class="quantity">1</div>
+                        <div class="returnPrice">$681</div>
+                        <i class="trashcan" ><img src="pic/Trash Can.png" alt=""></i>
+                    </div>
+                    <div class="item">
+                        <img src="pic/Rectangle 23.png" alt="">
+                        <div class="info">
+                            <div class="name">Spanish Rice</div>
+                            <div class="price">Extra garlic</div>
+                        </div>
+                        <div class="quantity">1</div>
+                        <div class="returnPrice">$681</div>
+                        <i class="trashcan" ><img src="pic/Trash Can.png" alt=""></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card-details">
+                <div class="d-flex justify-content-between align-items-center"><h1>Card Details</h1><img class="rounded" src="pic/Rectangle 3.png" width="60" height="60"></div>
+                <h5>Card type</h5>
+                <label class="radio"> <input type="radio" name="card" value="payment" checked> <span><img width="75" height="55" src="pic/Rectangle 9.png" /></span> </label>
+                <label class="radio"> <input type="radio" name="card" value="payment"> <span><img width="75" height="55" src="pic/Rectangle 10.png" /></span> </label>
+                <label class="radio"> <input type="radio" name="card" value="payment"> <span><img width="75" height="55" src="pic/Rectangle 11.png" /></span> </label>
+                <label class="radio"> <input type="radio" name="card" value="payment"> <span><img width="75" height="55" src="pic/Rectangle 12.png" class="inner-image"/><img src="pic/See all.png" class="see-all"/></span> </label>
+                                
+                <div class="form">
+                    <div class="group">
+                        <label for="">Name on card</label>
+                        <input type="text" name="" placeholder="Name">
+                    </div>
+                    <div class="group">
+                        <label for="ccn">Card Number</label>
+                        <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}"
+                        autocomplete="cc-number" maxlength="19"
+                        placeholder="1111 2222 3333 4444" required>
+                    </div>
+          <div class="exp">
+                <div class="exp-item">
+                    <label for="inputExpDate">Expiration Date</label>
+                    <input id="inputExpDate" type="text" placeholder="mm/yy" maxlength="7">
+                </div>
+                <div class="exp-item">
+                    <label for="cvv" class="expp">CVV</label>
+                    <input id="cvv" type="password" class="cvv" placeholder="123">
+                </div>
+                </div>
+
+                <!---    <div class="exp">
+                        <label for="">Expiration Date</label>
+                        <input id="inputExpDate"  type="text" placeholder="mm/yy" maxlength="7">
+                        <label for="" class="expp">CVV</label>
+                        <input type="password" class="cvv" placeholder="123">
+                    </div>--->
+                </div>
+                <div class="summary">
+                    <div>
+                      <p>Subtotal</p>
+                      <p>$1,668</p>
+                    </div>
+                    <div>
+                      <p>Shipping</p>
+                      <p>$4</p>
+                    </div>
+                    <div>
+                      <p>Total (Tax incl.)</p>
+                      <p>$1,672</p>
+                    </div>
+                  </div>
+                <button class="buttonCheckout">
+                    <div>
+                        <p>$1,672</p>
+                        <p>Checkout <img src="pic/Right.png" alt=""></p>
+                    </div>
+                </button>
+             </div>   
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js">
+        document.addEventListener('DOMContentLoaded', () => {
+            //IndexedDB
+        });
+    </script>
+
+</body>
+</html>
+
+
+<!---
+    <header class="header">
+        <div class="container header__container"></div>
+    </header>
+
+    <section class="catalog">
+        <div class="container">
+            <div class="catalog__order order">
+                <div class="order__wrapper">
+                    <div class="order__wrap-title">
+                    <h2 class="order__title">Shopping cart</h2>        
+                    <span class="span order__count">3</span>
+                </div>
+                <div class="order__wraplist">
+                    <ul class="order__list">
+
+                    </ul>
+                </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="catalog__wrapper">
+                <h2 class="catalog__title"></h2>
+
+            <div class="catalog__wraplist">
+                <ul class="catalog__list"></ul>
+            </div>
+            </div>
+        </div>
+
+
+
+    </section>
+-->
