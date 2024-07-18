@@ -117,7 +117,7 @@
                       <p>$1,672</p>
                     </div>
                   </div>
-                <button class="buttonCheckout">
+                <button class="buttonCheckout"> 
                     <div>
                         <p>$1,672</p>
                         <p>Checkout <img src="pic/Right.png" alt=""></p>
@@ -129,7 +129,8 @@
     </div>
 
 
-    <script src="script.js">
+    <script src="script.js" type="module">
+        import { openDB, deleteDB } from 'https://unpkg.com/idb?module'
         document.addEventListener('DOMContentLoaded', () => {
             //IndexedDB
         });
